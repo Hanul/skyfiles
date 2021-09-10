@@ -112,6 +112,19 @@ class SkyFiles {
             }
         }
     }
+
+    public async write(path: string, content: Buffer | string) {
+        await this.createFolder(Path.dirname(path));
+        return new Promise<void>((resolve, reject) => {
+            FS.writeFile(path, content, (error) => {
+                if (error !== null) {
+                    reject(error);
+                } else {
+                    resolve();
+                }
+            });
+        });
+    }
 }
 
 export default new SkyFiles();

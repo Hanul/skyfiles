@@ -10,6 +10,7 @@ declare class SkyFiles {
     }>;
     deleteFile(path: string): Promise<void>;
     createFolder(path: string): Promise<void>;
+    write(path: string, content: Buffer | string): Promise<void>;
 }
 declare const _default: SkyFiles;
 export default _default;

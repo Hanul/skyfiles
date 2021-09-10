@@ -2,7 +2,7 @@
     "name": "skyfiles",
     "author": "Young Jae Sim",
     "homepage": "https://github.com/Hanul/skyfiles",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "types": "./SkyFiles.d.ts",
     "main": "./SkyFiles.js",
     "devDependencies": {
